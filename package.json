@@ -1,0 +1,47 @@
+{
+  "name": "club",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "vercel-build": "prisma generate && next build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "engines": {
+    "node": ">=16 <17"
+  },
+  "dependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "@prisma/client": "^4.15.0",
+    "@react-pdf-viewer/core": "^3.12.0",
+    "@react-pdf-viewer/default-layout": "^3.12.0",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "exceljs": "^4.3.0",
+    "file-saver": "^2.0.5",
+    "formik": "^2.4.1",
+    "next": "13.4.4",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^3.4.120",
+    "postcss": "8.4.24",
+    "primeflex": "^3.3.1",
+    "primeicons": "^6.0.1",
+    "primereact": "^9.5.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-pdf": "^7.1.2",
+    "react-to-print": "^2.14.13",
+    "supports-color": "^8.1.1",
+    "tailwindcss": "3.3.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "canvas": "^2.11.2",
+    "node-loader": "^2.0.0",
+    "prisma": "^4.15.0"
+  }
+}

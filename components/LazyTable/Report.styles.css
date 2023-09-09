@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-size: small;
+  font-family: "none";
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.page {
+  width: 29.7cm; /* Swap width and height for landscape */
+  min-height: 21cm; /* Swap width and height for landscape */
+  padding: 1cm;
+  margin: 1cm auto;
+  border: 1px #d3d3d3 solid;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@page {
+  size: A4 landscape !important;
+  margin: 0 !important;
+}
+@media print {
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    /* padding: 8px; */
+    page-break-inside: avoid;
+  }
+}
+th {
+  background-color: rgb(232, 230, 230);
+}
+.sum {
+  background-color: rgb(203, 203, 203);
+  border: black 1px solid;
+}
+.sum td {
+  border: rgb(187, 187, 187) 2px solid !important;
+  font-weight: 800;
+}
